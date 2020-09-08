@@ -1,6 +1,6 @@
 package com;
 
-public class InvertWordsFunction {
+public class InvertParenthesesWordsFunction {
 
     public String mainInvert(String sentence) {
 

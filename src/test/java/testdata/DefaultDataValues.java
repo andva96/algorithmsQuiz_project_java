@@ -8,10 +8,10 @@ public class DefaultDataValues {
     public Object[][] getSentencesWithParenthesis() {
         return new Object[][]
                 {
-                        {"(Demo)","omed"},
-                        {"foo(bar)baz","foorabbaz"},
-                        {"foo(bar)baz(blim)","foorabbazmilb"},
-                        {"foo(bar(baz))blim","foobazrabblim"},
+                        {"(Demo)", "omed"},
+                        {"foo(bar)baz", "foorabbaz"},
+                        {"foo(bar)baz(blim)", "foorabbazmilb"},
+                        {"foo(bar(baz))blim", "foobazrabblim"},
                 };
     }
 
@@ -29,10 +29,10 @@ public class DefaultDataValues {
     public Object[][] getWords() {
         return new Object[][]
                 {
-                        {"demo","omed"},
-                        {"watermelon","nolemretaw"},
-                        {"hello","olleh"},
-                        {"unittest","tsettinu"},
+                        {"demo", "omed"},
+                        {"watermelon", "nolemretaw"},
+                        {"hello", "olleh"},
+                        {"unittest", "tsettinu"},
                 };
     }
 
@@ -43,7 +43,7 @@ public class DefaultDataValues {
                         {"(HE)LLO", "ehllo"},
                         {"(WATERMELON)", "nolemretaw"},
                         {"(Demo)", "omed"},
-                        {"FOO(BAR)baz(blim)","foorabbazmilb"},
+                        {"FOO(BAR)baz(blim)", "foorabbazmilb"},
 
                 };
     }

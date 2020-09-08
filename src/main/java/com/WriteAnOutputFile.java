@@ -7,13 +7,15 @@ import java.util.List;
 
 public class WriteAnOutputFile {
 
+    String outputFileLocation = "C:\\Users\\avallejo\\OneDrive - ENDAVA\\Documents\\Repositories\\algorithmsQuiz_project_java\\src\\main\\resources\\outputFile.txt";
 
-    public void storeOnOutputFile (List<String> palindromes) {
+
+    public void storeOnOutputFile(List<String> palindromes) {
 
         try {
-            BufferedWriter bufWriter = new BufferedWriter(new FileWriter("C:\\Users\\avallejo\\OneDrive - ENDAVA\\Documents\\Repositories\\algorithmsQuiz_project_java\\src\\main\\resources\\outputFile.txt"));
+            BufferedWriter bufWriter = new BufferedWriter(new FileWriter(outputFileLocation));
 
-            for(int i=0; i < palindromes.size(); i++){
+            for (int i = 0; i < palindromes.size(); i++) {
                 bufWriter.write(palindromes.get(i));
                 bufWriter.newLine();
             }

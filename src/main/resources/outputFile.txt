@@ -4,7 +4,3 @@ The line: Step on no pets!! is a Multiple words Palindrome
 The line: Are we not pure? “No, sir!” Panama’s moody Noriega brags. “It is garbage!” Irony dooms a man—a prisoner up to new era. is a Hell of Palindrome
 The line: King, are you glad you are king? is a Word by word Palindrome
 The line: Stats is a Single word Palindrome
-The line: Taco cat is a Two words Palindrome
-The line: Step on no pets!! is a Multiple words Palindrome
-The line: Are we not pure? “No, sir!” Panama’s moody Noriega brags. “It is garbage!” Irony dooms a man—a prisoner up to new era. is a Hell of Palindrome
-The line: King, are you glad you are king? is a Word by word Palindrome

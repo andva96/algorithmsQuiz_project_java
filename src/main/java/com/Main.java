@@ -13,9 +13,9 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Please select the function you want to execute: ");
-        System.out.println(" 1: Is Palindrome");
-        System.out.println(" 2: Invert words in Parenthesis");
+        System.out.println("Please enter the number of the function you want to execute: ");
+        System.out.println("1: Is Palindrome");
+        System.out.println("2: Invert words in Parenthesis");
         String optionSelected = input.nextLine();
 
         if (optionSelected.equals("1")) {
@@ -27,7 +27,7 @@ public class Main {
             System.out.println("Enter sentence to invert");
             String sentenceToInvert = input.nextLine();
 
-            InvertWordsFunction invert = new InvertWordsFunction();
+            InvertParenthesesWordsFunction invert = new InvertParenthesesWordsFunction();
             invert.mainInvert(sentenceToInvert);
         } else {
             System.out.println("Invalid input");

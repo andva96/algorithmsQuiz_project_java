@@ -10,14 +10,15 @@ import java.util.List;
 public class ReadAnInputFile {
 
 
-    public List<String> readFile (){
+    public List<String> readFile() {
 
         List<String> textLines = new ArrayList<>();
+        String inputFileLocation = "C:\\Users\\avallejo\\OneDrive - ENDAVA\\Documents\\Repositories\\algorithmsQuiz_project_java\\src\\main\\resources\\inputFile.txt";
 
         try {
-            BufferedReader bufReader = new BufferedReader(new FileReader("C:\\Users\\avallejo\\OneDrive - ENDAVA\\Documents\\Repositories\\algorithmsQuiz_project_java\\src\\main\\resources\\inputFile.txt"));
+            BufferedReader bufReader = new BufferedReader(new FileReader(inputFileLocation));
             String line = bufReader.readLine();
-            while (line !=null){
+            while (line != null) {
 
                 textLines.add(line);
                 line = bufReader.readLine();
@@ -36,7 +37,6 @@ public class ReadAnInputFile {
 
         return textLines;
     }
-
 
 
 }
