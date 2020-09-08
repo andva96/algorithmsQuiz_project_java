@@ -38,7 +38,16 @@ public class InvertWordsInParenthesisTests {
     public void validateOutputSentenceFormat(String sentence, String expectedSentence) {
 
         InvertParenthesesWordsFunction invert = new InvertParenthesesWordsFunction();
-        Assert.assertEquals(invert.mainInvert(sentence), expectedSentence, "Issue related with spaces or Capital letters");
+        Assert.assertEquals(invert.mainInvert(sentence), expectedSentence, "The input sentence is not matching the format");
+
+
+    }
+
+    @Test(testName = "Send numbers instead of letters", dataProvider = "NumberSentences", dataProviderClass = DefaultDataValues.class)
+    public void validateNumberSentences(String sentence, String expectedSentence) {
+
+        InvertParenthesesWordsFunction invert = new InvertParenthesesWordsFunction();
+        Assert.assertEquals(invert.mainInvert(sentence), expectedSentence, "");
 
 
     }
