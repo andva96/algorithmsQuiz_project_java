@@ -1,16 +1,17 @@
-public class InvertWordsInParenthesis {
+package com;
 
-    public static void main(String[] args) {
+public class InvertWordsFunction {
 
-        String sentence = "hola(bu(hi)mundo)";
+    public String mainInvert(String sentence) {
+
         sentence = sentence.toLowerCase();
         boolean validString = isAValidString(sentence);
         String invertedSentence = reverseWordInParenthesis(sentence, validString);
         System.out.println("The output of " + sentence + " is: " + invertedSentence);
-
+        return invertedSentence;
     }
 
-    public static boolean isAValidString(String sentence) {
+    public boolean isAValidString(String sentence) {
 
         int lettersQuantity = 0;
 
@@ -28,11 +29,11 @@ public class InvertWordsInParenthesis {
 
 
         }
-        System.out.println("Quantity of letters: " + lettersQuantity);
+        System.out.println("Quantity of characters: " + lettersQuantity);
         return true;
     }
 
-    public static String reverseSubstring(String substring) {
+    public String reverseSubstring(String substring) {
 
         int end;
         String invertedWord = "";
@@ -46,7 +47,7 @@ public class InvertWordsInParenthesis {
         return invertedWord;
     }
 
-    public static String reverseWordInParenthesis(String sentence, boolean isAValidSentence) {
+    public String reverseWordInParenthesis(String sentence, boolean isAValidSentence) {
 
         String invalidSentence = "Invalid sentence";
         int characterNotFound = -1;
@@ -70,15 +71,14 @@ public class InvertWordsInParenthesis {
                 end = sentence.indexOf(")", start);
 
             }
-            // System.out.println(sentence);
             return sentence;
 
         } else {
             return invalidSentence;
         }
 
+
     }
 
+
 }
-
-

@@ -1,9 +1,11 @@
+package com;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class IsAPalindromeValidation {
+public class IsPalindromeFunction {
 
-    public static void main(String[] args) {
+    public void mainPalindrome() {
 
         ReadAnInputFile myfile = new ReadAnInputFile();
         List<String> textLines = myfile.readFile();
@@ -11,7 +13,7 @@ public class IsAPalindromeValidation {
 
     }
 
-    public static void goThroughText(List<String> text) {
+    public void goThroughText(List<String> text) {
 
         WriteAnOutputFile outputfile = new WriteAnOutputFile();
         List<String> outputList = new ArrayList<>();
@@ -25,15 +27,15 @@ public class IsAPalindromeValidation {
             if (isACharPalindrome(cleanedLine)) {
                 String outputString = classifyPalindromes(line, false);
                 outputList.add(outputString);
-                palindromesCounter ++;
+                palindromesCounter++;
 
             } else if (isAWordPalindrome(line)) {
                 String outputString = classifyPalindromes(line, true);
                 outputList.add(outputString);
-                palindromesCounter ++;
+                palindromesCounter++;
             }
 
-            if (palindromesCounter >= 10){
+            if (palindromesCounter >= 10) {
                 break;
             }
 
@@ -44,13 +46,13 @@ public class IsAPalindromeValidation {
 
     }
 
-    public static String deleteSpecialCharacters(String line) {
+    public String deleteSpecialCharacters(String line) {
 
         String cleanedLine = line.toLowerCase().replaceAll("[^a-zA-Z]", "");
         return cleanedLine;
     }
 
-    public static boolean isACharPalindrome(String line) {
+    public boolean isACharPalindrome(String line) {
 
         int start = 0, end = line.length() - 1;
 
@@ -66,7 +68,7 @@ public class IsAPalindromeValidation {
         return true;
     }
 
-    public static boolean isAWordPalindrome(String line) {
+    public boolean isAWordPalindrome(String line) {
 
         line = line.toLowerCase().replaceAll("[^a-zA-Z ]", "");
 
@@ -88,7 +90,7 @@ public class IsAPalindromeValidation {
         return true;
     }
 
-    public static String classifyPalindromes(String line, Boolean isAWordPalin) {
+    public String classifyPalindromes(String line, Boolean isAWordPalin) {
 
         int spacesQuantity = 0;
         String category;
@@ -126,9 +128,5 @@ public class IsAPalindromeValidation {
         return "The line: " + line + " is a " + category;
 
     }
-
-
-
-
 
 }
