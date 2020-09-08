@@ -48,5 +48,17 @@ public class DefaultDataValues {
                 };
     }
 
+    @DataProvider(name = "NumberSentences")
+    public Object[][] getNumbers() {
+        return new Object[][]
+                {
+                        {"(1234)5678", "43215678"},
+                        {"((123))", "123"},
+                        {"123456", "123456"},
+
+                };
+    }
+
+
 
 }
