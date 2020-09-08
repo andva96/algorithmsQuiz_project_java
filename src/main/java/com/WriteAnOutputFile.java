@@ -7,7 +7,7 @@ import java.util.List;
 
 public class WriteAnOutputFile {
 
-    String outputFileLocation = "C:\\Users\\avallejo\\OneDrive - ENDAVA\\Documents\\Repositories\\algorithmsQuiz_project_java\\src\\main\\resources\\outputFile.txt";
+    String outputFileLocation = System.getProperty("user.dir") + "\\src\\main\\resources\\outputFile.txt";
 
 
     public void storeOnOutputFile(List<String> palindromes) {

@@ -13,7 +13,7 @@ public class ReadAnInputFile {
     public List<String> readFile() {
 
         List<String> textLines = new ArrayList<>();
-        String inputFileLocation = "C:\\Users\\avallejo\\OneDrive - ENDAVA\\Documents\\Repositories\\algorithmsQuiz_project_java\\src\\main\\resources\\inputFile.txt";
+        String inputFileLocation = System.getProperty("user.dir") + "\\src\\main\\resources\\inputFile.txt";
 
         try {
             BufferedReader bufReader = new BufferedReader(new FileReader(inputFileLocation));
